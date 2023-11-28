@@ -36,7 +36,7 @@ html {
 .back-button {
     display: flex;
     position: absolute;
-    z-index: 3;
+    z-index: 4;
     bottom: 10px;
     left: 10px;
     background-color: rgb(0, 0, 0);
