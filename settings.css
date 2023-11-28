@@ -34,7 +34,7 @@ html {
     cursor: pointer;
 }
 .back-button {
-    display: flex;
+    display: none;
     position: absolute;
     z-index: 4;
     bottom: 10px;
@@ -65,6 +65,9 @@ html {
 }
 .settings-button-inactive {
     display: none;
+}
+.back-button-active {
+    display: flex;
 }
 .settings-01 {
     width: 100%;
