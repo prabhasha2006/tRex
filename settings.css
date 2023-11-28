@@ -5,6 +5,9 @@ html {
 .setings {
     display: flex;
 }
+#headline {
+    font-size: 50px;
+}
 .copyright {
     display: flex;
     position: fixed;
@@ -21,31 +24,36 @@ html {
 }
 .set-button {
     display: flex;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    border: 0;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 4px;
+    align-items: center;
+    justify-content: center;
+}
+.back-button {
+    display: none;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 0;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 4px;
+    align-items: center;
+    justify-content: center;
+}
+.footer-btn {
+    display: flex;
     position: fixed;
     z-index: 4;
     bottom: 10px;
     left: 10px;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 5px;
-    border: 0;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-.back-button {
-    display: none;
-    position: absolute;
-    z-index: 4;
-    bottom: 10px;
-    left: 10px;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    border-radius: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    border: 0;
-    padding: 5px 10px;
-    cursor: pointer;
 }
 .settings-box {
     width: 0%;
@@ -62,9 +70,13 @@ html {
 }
 .settings-box-active {
     width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 .settings-button-inactive {
     display: none;
+    align-items: center;
+    justify-content: center;
 }
 .back-button-active {
     display: flex;
