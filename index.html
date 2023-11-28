@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no">
     <title >chrome easter egg: t-rex runner</title>
     <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./settings.css">
+    <link rel="stylesheet" id="theme" href="./settings.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> 
     <script src="index.js"></script>
@@ -57,7 +57,7 @@
                                     <label for="">Clouds speed</label>
                                 </td>
                                 <td>
-                                    <input oninput="updateSettings(2, this.value)" class="settingsValue" type="range" value="2" min="0" max="10">
+                                    <input oninput="updateSettings(2, this.value)" class="settingsValue" type="range" value="2" min="0" max="40">
                                 </td>
                             </tr>
                             <tr>
@@ -102,19 +102,32 @@
                             </tr>
                             <tr>
                                 <td>
-                                    <label for="">Theme Song</label>
+                                    <label for="">Theme</label>
+                                </td>
+                                <td>
+                                    <i style="margin-left: 10px;" class="fa fa-moon-o"></i>
+                                    <input oninput="updateSettings(9, this.value)" class="settingsValue" type="range" value="2" min="1" max="2" style="width: 35%;">
+                                    <i class="fa fa-sun-o"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="">Music</label>
                                 </td>
                                 <td>
                                     <select oninput="updateSettings(8, this.value)" class="settingsValue">
-                                        <option value="./assets/Audio/bgAud0.mp3">Kevin MacLeod</option>
+                                        <option value="./assets/Audio/Kevin-MacLeod.mp3">Kevin MacLeod</option>
+                                        <option value="./assets/Audio/Run-start.mp3">Run Loop</option>
                                         <option value="./assets/Audio/Subway-Surfers.mp3">Subway Surface</option>
-                                        <option value="./assets/Audio/Temple-Run.mp3">Temple run</option>
+                                        <option value="./assets/Audio/Temple-Run.mp3">Temple Run</option>
+                                        <option value="./assets/Audio/Horror-road.mp3">Horror Road</option>
+                                        <option value="./assets/Audio/Treasure-hunt.mp3">Treasure Hunt</option>
                                     </select>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
-                                    <label for="">Value Changes</label>
+                                    <label for="">Changes</label>
                                 </td>
                                 <td>
                                     <input class="settingsValue" disabled type="text" value="0">
