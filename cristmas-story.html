@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style id="themecss"></style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Canvas</title>
+</head>
+<body>
+    <div class="header">
+        <h2 class="book-title">
+            Kumuthu Prabhasha <button class="close-head" onclick="closeHead()">x</button>
+        </h2>
+    </div>
+    <div class="scroll-to-patuna">
+        <button onclick="theme()">
+            <i id="darkmode" class='fa fa-moon-o'></i>
+            <i style="display: none;" id="litemode" class='fa fa-sun-o'></i>
+        </button>
+    </div>
+    <div class="the-body">
+        <div class="selector">
+            <br>
+            <br>
+            <li>උද්දමනය සහ නත්තල</li>
+            <p>
+                <br>එදා ලස්සන සීතල දවසක්. අපි හැමෝටම Class නිවාඩු දීලා. මටත් එහෙමයි. උදෑසන අවදි වුනේ 7.30ට පමණ. එය වෙනදාට සාපේක්ෂව ලොකු ප්‍රමාදයකි. මා කැලැන්ඩරය දෙස බලන විට මතක් වූයේ අද නත්තල් දවස කියා ය.
+                <br>වහා දුරකතනය ගෙය Merry Christmas කියා status දැමීමට ගිය නමුත්, මා මුහුන දුන්නේ ඉතා සෝචනීය තත්වයකටයි. අද උදේ සිට විදුලිය නැත. තාත්තාගෙ Mobile hotspot මතින් ගෙවෙන මේ ගමන විදුලිය ඇතා හෝ නැතා මම කෙසේ හෝ යමි.
+                <br>
+                <br>උදේ අම්මා සාදා දුන් තේ එක බොමින් මම Facebook එකට ගියා. මට වැඩිපුරම දකින්න ලැබුනේ ලංකාවේ විවිධ තැන් වලට හිම වැටෙන Post බැවින් මා අම්මාටත් නොකියාම ගේ මිදුලට ගියා. හරිම පුදුමයි!  හිම වැටෙනවා.
+                <br>මීට කලින් කිසිම නත්තලකට නොවූ පරිද්දෙන් ලස්සනට හිම වැටෙනවා. මං ඉක්මනින් ගේ ඇතුලට ගියේ බාජනයක් රැගෙන ඒමටයි. ඒ වෙන කිසිවකටත් නොවේ, හිම එකතු කිරීමට. ටික වේලාවක් ගත විය. නත්තල් සීයා තවමත් ආපු නැති එක ගැන මා සිටියේ කනස්සල් ස්වභාවයකිනි. Intel i9 13gen 32gb RAM එකක් හෝ AMD Ryzon 7 PC සමග vps  එකක් රැගෙන එන නත්තල් සීයාව මම සිහිනෙන් පවා නිතර නිතර දැක්කෙමි. නමුත් එය මා සිතන තරම් සුන්දර නොවීමට වැඩි කාලයක් ගත නොවීය.
+                <br>
+                <br>මා මේ වන විට සිටින්නේ හිම කැට එකතු කරමින් ය. ටික වෙලාවකින් මට සිතුනේ හිම කැට වල ඡායාරූපයක් Status දැමීමටය. නමුත් මා නොසිතන දෙයක් සිදු වූ නිසා එය යටපත් විය.
+                <br>
+                <br>එක්වරම සුමට සීතල ගෝලාකාර ලස්සන හිම බෝලයක් මගේ හිස මතට කඩා වැදුනි. මා ඉතා අපහසුවෙන් එය අතට ගෙන පුටුවකින් වාඩි වී හිස අතගාන්ට විය. 
+                <br>මේ ලස්සන හිම බෝලෙ කොහොමද මගෙ ඔලුවට වැටුනෙ? කවුරුහරි ගැහුවාද? නැත්නම් අනේ මන්දා...  මා සිතන්නට විය.
+                <br>
+                <br>මද වේලාවකින් නත්තල් සීයා අපේ මිදුලට පිනිමුවන්ගේ රථයෙන්ම ගොඩ වූයේය.
+                <br>නත්තල් සීයා රථයෙන් බැස කිසිදු මල්ලක්  නොමැතිව මා දෙසට පැමිණියේය.
+                <br>
+                <br>"පුතේ අපි Cricket ගහ ගහ හිටියේ. මගෙ බෝලෙ ඔය පැත්තට ආවද?" නත්තල් සීයා විමසීය.
+                <br>
+                <br>"අනෙ අම්මේ සීයේ, ඔය බෝලෙ මගෙ ඔලුවටම කෙලියනෙ. මේ මං තාම අයිස් තියනවා..."
+                <br>
+                <br>"අනේ සොරි පුතේ මේ අපේ එකෙක්ගෙ අතින් බෝලෙ ගියානෙ..."
+                <br>
+                <br>"හරි සීයෙ ඒකට කමක් නෑ... කෝ අපිට තෑගි ගේන්නැද්ද?"
+                <br>
+                <br>"පුතේ... එහෙම කාලයක් මටත් තිබුනා. හැබැයි දැං ඒක ඔයාලා හිතන තරම් සුන්දර නෑ පුතේ. අපිත් ජීවත් වෙන්නෙ හරිම අමාරුවෙන්. පිනිමුවන්ට කන්න දෙන්නෙත් අමාරුවෙන්."
+                <br>
+                <br>"එහෙමද සීයෙ. එතකොට සීය කොහෙන්ද තෑගි ගේන්නෙ?"
+                <br>
+                <br>"පුතේ අපි දිව්‍ය ලෝකෙ පේමන්ට් වල හිඟා කනවා. එතනින් යන දෙවිවරු කීයක්හරි දීලා යනවා. ඒකෙන් තලමයි මම තෑගි ගේන්නෙ. අද එහෙ යන්නත් බෑලු පුතේ දෙවියො Strike ලු."
+                <br>
+                <br>"හත්තික්කේ... සීයෙ මන් දන්නෙ නෑනෙ ඔහොම සීන් එකක්. එහෙනම් සීය ආපහු ගිහින් සෙල්ලම් කරන්න. අපිට තෑගි ඕන නෑ. ගොඩක් හීන දැක්කා ඒවට කමක් නෑ."
+                <br>
+                <br>"කරන්න දෙයක් නෑ පුතේ. අපිටත් උද්දමනට ඉහලයි. මගෙ අර බෝලෙ දුන්න නම්..."
+                <br>
+                <br>මම නත්තල් සීයාට බෝලය දුන්නේ ඇස් දෙකේ කඳුලු පුරවගෙන ය. නත්තල් සීයාට සමු දී මා කාමරයට ගොස් තනිව මේ ගැන කල්පනා කරන්නට විය. නමුත් මට කිසිවත් හරියට තේරුම් ගැනීමට අසීරු විය.
+                <br>
+                <br>හැමෝටම අමාරු කාලේ නත්තල් සීයගෙන් තෑගි ඉල්ලන්න හොඳ නෑ. එයාටත් අමාරු කාලයක් ලු මේක.
+                <br><br>
+                <br>~ Kumuthu Prabhasha
+                <br>
+                *සමාප්තයි*
+            </p>
+        </div>
+    <script>const scrolling = (index) => {
+        window.scrollBy(0, window.innerHeight*index);
+    }
+    const closeHead = () => {
+        document.getElementsByClassName("header")[0].style.marginLeft = "100%"
+    }
+    let litemod = `* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    body {
+        background-image: linear-gradient(rgb(216, 255, 198),rgb(255, 255, 255));
+        height: 100vh;
+        scroll-behavior: smooth;
+    }
+    .header {
+        height: 5vh;
+        width: 100%;
+        background-image: linear-gradient(to right, rgba(4, 5, 27, 0),rgba(182, 182, 182, 0.295));
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 20px 10px;
+        position: fixed;
+        transition: .5s;
+    }
+    .header h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgba(37, 37, 37, 0.712);
+        font-size: 17px;
+    }
+    .close-head {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+        font-size: 17px;
+        background-color: rgba(255, 53, 53, 0.849);
+        border: 0;
+        padding: 0px 6px;
+        border-radius: 10px;
+    }
+    .scroll-to-patuna {
+        font-size: 17px;
+        position: fixed;
+        z-index: 2;
+        bottom: 10px;
+        right: 10px;
+    }
+    .scroll-to-patuna button {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+        font-size: 17px;
+        background-color: rgba(26, 26, 26, 0.849);
+        border: 0;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .the-body {
+        background-color: rgba(255, 0, 0, 0);
+    }
+    .pitakaware {
+        width: 100%;
+        padding: 10px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        background-image: url(https://telegra.ph/file/ce9aa21991f8ad50e167f.jpg);
+        filter: blur(1);
+    }
+    .pitakaware img {
+        width: 100%;
+        border-radius: 10px;
+        max-height: 85vh;
+        max-width: 400px;
+    }
+    .selector {
+        width: 100%;
+        padding: 10px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+    }
+    .selector li {
+        color: rgb(61, 61, 61);
+        font-size: 26px;
+        margin-bottom: 15px;
+        border-bottom: 3px solid black;
+    }
+    .selector p {
+        font-weight: bold;
+        color: rgb(61, 61, 61);
+        font-size: 24px;
+        margin-top: 10px;
+        line-height: 40px;
+        padding: 10px;
+        text-align: justify;
+    }
+    .story {
+        width: 100%;
+        padding: 10px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .story pre {
+        font-weight: bold;
+        width: 100%;
+        color: rgb(31, 31, 31);
+        font-size: 14px;
+        margin-top: 10px;
+        line-height: 35px;
+        padding: 10px;
+        text-align: justify;
+        overflow: scroll;
+        text-wrap: wrap;
+    }
+    .story h2 {
+        font-weight: bold;
+        color: rgb(61, 61, 61);
+        border-bottom: 2px solid rgb(46, 46, 46);
+        padding: 10px;
+    }
+    .selector h2 {
+        font-weight: bold;
+        color: rgb(61, 61, 61);
+        border-bottom: 2px solid rgb(46, 46, 46);
+        padding: 10px;
+        margin-bottom: 30px;
+    }`
+    let darkmod = `* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+    }
+    body {
+        background-image: linear-gradient(rgb(27, 12, 4),rgb(0, 0, 0));
+        height: 100vh;
+        scroll-behavior: smooth;
+    }
+    .header {
+        height: 5vh;
+        width: 100%;
+        background-image: linear-gradient(to right, rgba(4, 5, 27, 0),rgba(182, 182, 182, 0.295));
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 20px 10px;
+        position: fixed;
+        transition: .5s;
+    }
+    .header h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgba(255, 255, 255, 0.712);
+        font-size: 17px;
+    }
+    .close-head {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+        font-size: 17px;
+        background-color: rgba(255, 53, 53, 0.849);
+        border: 0;
+        padding: 0px 6px;
+        border-radius: 10px;
+    }
+    .scroll-to-patuna {
+        font-size: 17px;
+        position: fixed;
+        z-index: 2;
+        bottom: 10px;
+        right: 10px;
+    }
+    .scroll-to-patuna button {
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(255, 255, 255);
+        font-size: 17px;
+        background-color: rgba(255, 53, 53, 0.849);
+        border: 0;
+        padding: 5px;
+        border-radius: 10px;
+    }
+    .the-body {
+        background-color: rgba(255, 0, 0, 0);
+    }
+    .pitakaware {
+        width: 100%;
+        padding: 10px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        background-image: url(https://telegra.ph/file/ce9aa21991f8ad50e167f.jpg);
+        filter: blur(1);
+    }
+    .pitakaware img {
+        width: 100%;
+        border-radius: 10px;
+        max-height: 85vh;
+        max-width: 400px;
+    }
+    .selector {
+        width: 100%;
+        padding: 10px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        -webkit-touch-callout: none; /* iOS Safari */
+        -webkit-user-select: none; /* Safari */
+        -khtml-user-select: none; /* Konqueror HTML */
+        -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+        user-select: none; /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+    }
+    .selector li {
+        color: white;
+        font-size: 26px;
+        margin-bottom: 15px;
+        border-bottom: 3px solid rgb(255, 255, 255);
+    }
+    .selector p {
+        color: white;
+        font-size: 24px;
+        margin-top: 10px;
+        line-height: 40px;
+        padding: 10px;
+        text-align: justify;
+    }
+    .story {
+        width: 100%;
+        padding: 10px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .story pre {
+        width: 100%;
+        color: white;
+        font-size: 14px;
+        margin-top: 10px;
+        line-height: 35px;
+        padding: 10px;
+        text-align: justify;
+        overflow: scroll;
+        text-wrap: wrap;
+    }
+    .story h2 {
+        color: white;
+        border-bottom: 2px solid white;
+        padding: 10px;
+    }
+    .selector h2 {
+        color: white;
+        border-bottom: 2px solid white;
+        padding: 10px;
+        margin-bottom: 30px;
+    }`
+    themecss.innerHTML = litemod
+    let lite = true
+    const theme = () => {
+        if(lite){
+            darkmode.style.display = "none"
+            litemode.style.display = "block"
+            themecss.innerHTML = darkmod
+            lite = false
+        }else{
+            litemode.style.display = "none"
+            darkmode.style.display = "block"
+            themecss.innerHTML = litemod
+            lite = true
+        }
+    }</script>
+</body>
+</html>
